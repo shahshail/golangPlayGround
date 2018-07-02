@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main()  {
+func mainPointer()  {
 	// This is Pointer tutorial..
 	var x int  = 1
 	var p = &x
@@ -15,7 +15,7 @@ func main()  {
 	// Lets increment a number
 	v := 1 
 	incr(&v)
-	
+
 }
 
 var p = f()
