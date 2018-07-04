@@ -28,4 +28,9 @@ func main() {
 	delete(ages, "Shail")
 	fmt.Println(ages)
 
+	//Map returns '0' when there is no key available.. it is fine if we dont have numeric value. But iof we have a numeric value then it is difficult to find either '0' means value or nil
+	//We can check the status by
+	age, ok := ages["bob"]           // we dont have bob as a key
+	fmt.Printf("age : %d", age)      // 0
+	fmt.Printf("Available : %b", ok) // returns false
 }
