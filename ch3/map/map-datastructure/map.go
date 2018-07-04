@@ -24,4 +24,8 @@ func main() {
 	emptyMap := map[string]int{}
 	fmt.Println(emptyMap)
 
+	//To Delete or Remove an item
+	delete(ages, "Shail")
+	fmt.Println(ages)
+
 }
