@@ -13,4 +13,15 @@ func main() {
 	fmt.Println(ages)
 	fmt.Println(ages["Shail"]) //26
 
+	//Map can also be initialized by empty set
+	age2 := map[string]int{
+		"Shail": 26,
+		"Lalu":  27,
+	}
+	fmt.Println(age2) // Equivellant to above map
+
+	//To create Empty map
+	emptyMap := map[string]int{}
+	fmt.Println(emptyMap)
+
 }
