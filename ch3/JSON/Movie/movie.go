@@ -21,7 +21,7 @@ func main() {
 	}
 
 	// Converting GO Datastructure in JOSON called Marshalling
-	data, err := json.Marshal(movies)
+	data, err := json.MarshalIndent(movies, " ", "  ")
 	if err != nil {
 		log.Fatalf("Json Marshalling failed : %s", err)
 	}
